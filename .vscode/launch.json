@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: FastAPI (Citas)",
+            "type": "debugpy",
+            "request": "launch",
+            // La línea clave que resuelve todo: le decimos que trabaje
+            // desde la carpeta específica de nuestro proyecto de citas.
+            "cwd": "${workspaceFolder}/reservation_appointment",
+            "module": "uvicorn",
+            "args": [
+                "app.main:app",
+                "--reload"
+            ],
+            "jinja": true
+        }
+    ]
+}
